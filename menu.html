@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>蓮藕大王鼎中店(正哥)|菜單MENU</title>
+		<!-- icon -->
+		<link rel="stylesheet" href="images/Logo.svg" />
+		<!-- css -->
+		<link rel="stylesheet" href="bs-533/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="fonts/icons-1.11.3/font/bootstrap-icons.css" />
+		<link rel="stylesheet" href="js/ui-main/dist/fancybox/fancybox.css" />
+		<link rel="stylesheet" href="CSS/style.css" />
+		<link rel="stylesheet" href="CSS/media.css" />
+	</head>
+
+	<body>
+		<!-- TOP不對齊上方 -->
+		<div class="bgc-lotus py-2 border-bottom border-3 border-darkred">
+			<div class="container">
+				<!-- 左右兩邊留白 -->
+				<!-- 聯絡資訊、語系、會員 -->
+				<div class="d-flex align-items-center justify-content-between">
+					<!-- d-flex直排、align-items-center對齊軸線中央 -->
+					<!-- 聯絡資訊 -->
+					<div>
+						<ul class="list-unstyled d-flex mb-0">
+							<!-- mb-0把它拉上去 -->
+							<!-- 電子信箱 -->
+							<li class="me-3">
+								<a
+									class="text-darkred"
+									href="mailto:service@lotusroot.com.tw"
+									title="聯絡信箱：service@lotusroot.com.tw">
+									<i class="bi bi-envelope"></i>
+									<span class="text-darkred d-md-inline-block d-none"
+										>service@lotusroot.com.tw</span
+									>
+								</a>
+							</li>
+							<!-- 電話 -->
+							<li>
+								<a
+									class="text-darkred"
+									href="tel:07-359-5118"
+									title="專線：07-359-5118">
+									<i class="bi bi-telephone"></i>
+									<span class="text-darkred d-md-inline-block d-none">07-359-5118</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 語系、會員、購物車 -->
+					<div class="d-flex me-sm-0 me-3">
+						<!-- 語系 -->
+						<div class="dropdown text-darkred lang-menu">
+							<!-- lang-menu裡面的dropdown-menu -->
+							<button
+								class="btn dropdown-toggle p-0 text-darkred"
+								type="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+								<i class="bi bi-globe-americas"></i>
+								<span class="d-none">語系轉換按鈕</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="border-bottom">
+									<a class="dropdown-item" href="#" title="繁體中文">繁</a>
+								</li>
+								<li class="border-bottom">
+									<a class="dropdown-item" href="#" title="簡體中文">簡</a>
+								</li>
+								<li class="border-bottom">
+									<a class="dropdown-item" href="#" title="英文">英</a>
+								</li>
+							</ul>
+						</div>
+						<span class="px-3">|</span>
+						<!-- 會員 -->
+						<div>
+							<a class="text-darkred" href="javascript:;" title="點擊">
+								<i class="bi bi-person"></i>
+								<span class="text-darkred d-md-inline-block d-none">登入</span>
+							</a>
+						</div>
+						<span class="px-3">|</span>
+						<!-- 購物車 -->
+						<div class="cart-btn">
+							<a
+								href="cart-list.html"
+								title="前往 我的購物車"
+								class="position-relative">
+								<i class="bi bi-cart text-darkred"></i>
+								<span
+									class="text-white small bg-danger rounded-pill p-1 fs-8 fw-bold position-absolute"
+									>+99</span
+								>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 主選單 -->
+		<nav class="navbar navbar-expand-lg bgc-lotus-a shadow-sm">
+			<div class="container">
+				<h1 class="mb-0 d-inline-block">
+					<a class="navbar-brand col-3 me-0" href="index.html" title="回 首頁">
+						<img
+							class="d-md-inline-block d-none"
+							src="images/logo.svg"
+							alt="蓮藕大王鼎中店(正哥)" />
+						<span class="d-md-none d-inline-block text-darkred">
+							蓮藕大王鼎中店(正哥)
+						</span>
+					</a>
+				</h1>
+				<!-- 平板、手機 -->
+				<div class="search-btn d-lg-none d-inline-block ms-auto">
+					<button
+						class="btn"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#search-area"
+						aria-expanded="false"
+						aria-controls="search-area">
+						<i class="bi bi-search-heart text-darkred"></i>
+						<span class="d-none">搜尋按鈕</span>
+					</button>
+				</div>
+				<!-- 漢堡 -->
+				<button
+					class="navbar-toggler border-0"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#main-menu"
+					aria-controls="main-menu"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<!-- <span class="navbar-toggler-icon"></span> 此為選單可以更換成自己的圖 -->
+					<i class="bi bi-list"></i>
+				</button>
+				<!-- 連結 -->
+				<div class="collapse navbar-collapse" id="main-menu">
+					<ul class="navbar-nav mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#about" title="前往 關於蓮藕大王"
+								>關於蓮藕大王</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+								title="前往 最新消息"
+								>最新消息
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="#activity" title="前往 餐車活動"
+										>餐車活動</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#holiday" title="前往 休假公告"
+										>休假公告</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#new-product" title="前往 最新商品"
+								>最新商品
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="menu.html" title="前往 菜單MENU">菜單MENU</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="onlineshop.html" title="前往 線上購物"
+								>線上購物
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#contact-us" title="前往 聯絡我們"
+								>聯絡我們</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#subscribe" title="前往 訂閱"
+								>訂閱</a
+							>
+						</li>
+						<!-- 電腦版 -->
+						<li class="nav-item d-lg-block d-none">
+							<div class="search-btn">
+								<button
+									class="btn"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#search-area"
+									aria-expanded="false"
+									aria-controls="search-area">
+									<i class="bi bi-search-heart text-darkred"></i>
+									<span class="d-none">搜尋按鈕</span>
+								</button>
+							</div>
+						</li>
+					</ul>
+					<!-- <input
+							class="form-control me-2"
+							type="search"
+							placeholder="Search"
+							aria-label="Search" /> -->
+				</div>
+			</div>
+		</nav>
+		<!-- 搜尋表單 -->
+		<div class="container col-xl-10">
+			<div class="collapse" id="search-area">
+				<div class="card card-body border-0 bg-transparent">
+					<form action="#" method="get">
+						<div class="form-floating">
+							<input
+								type="search"
+								class="form-control bgc-lotus-a border-0"
+								id="floatingInput"
+								name="search"
+								placeholder="搜尋" />
+							<label for="floatingInput">搜尋</label>
+						</div>
+						<button type="submit" class="d-none">送出</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 主要內容 -->
+		<main>
+			<article id="menu-page" class="py-7">
+				<div class="container">
+					<!-- 區塊標題 -->
+					<div class="text-center section-title mb-5">
+						<h2>菜單MENU</h2>
+						<p>我們用心堅持每一個細節，致力於將健康與美味傳遞</p>
+					</div>
+					<!-- 內容 -->
+					<div>
+						<!-- 分類按鈕 -->
+						<ul
+							class="list-unstyled d-flex align-items-center justify-content-center filter-btn">
+							<li class="btn btn-lotus-a me-2" data-filter="all">全部</li>
+							<li class="btn btn-lotus-a me-2" data-filter="1">有料</li>
+							<li class="btn btn-lotus-a me-2" data-filter="2">茶類</li>
+							<li class="btn btn-lotus-a me-2" data-filter="3">奶類</li>
+							<li class="btn btn-lotus-a me-2" data-filter="4">其他</li>
+						</ul>
+						<!-- 商品 -->
+						<div
+							class="filter-area row row-cols-1 row-cols-md-2 row-cols-gl-3 row-cols-xxl-4 g-4 filter-box">
+							<!-- 1手熬薏仁湯 -->
+							<div class="col text-center filtr-item" data-category="1">
+								<a
+									href="images/drink1.jpg"
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="手熬薏仁湯">
+									<div class="card border-0">
+										<img src="images/drink1.jpg" class="card-img-top" alt="手熬薏仁湯" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">手熬薏仁湯</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4">有料</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- 2蓮藕牛奶 -->
+							<div class="col text-center filtr-item" data-category="3">
+								<a
+									href="images/drink2.jpg "
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="蓮藕牛奶">
+									<div class="card border-0">
+										<img
+											src="images/drink2.jpg"
+											class="card-img-top"
+											alt="招牌蓮藕牛奶" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">招牌蓮藕牛奶</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4">奶類</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- 3手熬綠豆露 -->
+							<div class="col text-center filtr-item" data-category="1">
+								<a
+									href="images/drink3.jpg"
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="手熬綠豆露">
+									<div class="card border-0">
+										<img src="images/drink3.jpg" class="card-img-top" alt="手熬綠豆露" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">手熬綠豆露</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4">有料</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- 4洛神烏梅 -->
+							<div class="col text-center filtr-item" data-category="4">
+								<a
+									href="images/drink4.jpg"
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="洛神烏梅">
+									<div class="card border-0">
+										<img src="images/drink4.jpg" class="card-img-top" alt="洛神烏梅" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">洛神烏梅</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4">其他</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- 5杏仁茶 -->
+							<div class="col text-center filtr-item" data-category="2">
+								<a
+									href="images/drink5.jpg"
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="杏仁茶">
+									<div class="card border-0">
+										<img src="images/drink5.jpg" class="card-img-top" alt="杏仁茶" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">杏仁茶</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4">茶類</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- 6綠豆露牛奶 -->
+							<div class="col text-center filtr-item" data-category="1,3">
+								<a
+									href="images/drink6.jpg"
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="綠豆露牛奶">
+									<div class="card border-0">
+										<img src="images/drink6.jpg" class="card-img-top" alt="綠豆牛奶" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">綠豆露牛奶</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4">有料、奶類</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- 7紅豆牛奶 -->
+							<div class="col text-center filtr-item" data-category="1,3">
+								<a
+									href="images/drink7.jpg"
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="紅豆牛奶">
+									<div class="card border-0">
+										<img src="images/drink7.jpg" class="card-img-top" alt="紅豆牛奶" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">紅豆牛奶</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4">有料、奶類</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- 8紅豆湯 -->
+							<div class="col text-center filtr-item" data-category="1">
+								<a
+									href="images/drink8.jpg"
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="紅豆湯">
+									<div class="card border-0">
+										<img src="images/drink8.jpg" class="card-img-top" alt="紅豆湯" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">紅豆湯</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4">有料</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- 9紅茶 -->
+							<div class="col text-center filtr-item" data-category="2">
+								<a
+									href="images/drink9.jpg"
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="紅茶">
+									<div class="card border-0">
+										<img src="images/drink9.jpg" class="card-img-top" alt="紅茶" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">紅茶</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4">茶類</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- 10紅茶牛奶 -->
+							<div class="col text-center filtr-item" data-category="3">
+								<a
+									href="images/drink10.jpg"
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="紅茶牛奶">
+									<div class="card border-0">
+										<img src="images/drink10.jpg" class="card-img-top" alt="紅茶牛奶" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">紅茶牛奶</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4">奶類</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- 11紅茶拿鐵 -->
+							<div class="col text-center filtr-item" data-category="3">
+								<a
+									href="images/drink11.jpg"
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="紅茶拿鐵">
+									<div class="card border-0">
+										<img src="images/drink11.jpg" class="card-img-top" alt="紅茶拿鐵" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">紅茶拿鐵</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4">奶類</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- 12招牌蓮藕茶 -->
+							<div class="col text-center filtr-item" data-category="2">
+								<a
+									href="images/drink12.jpg"
+									title="點擊放大圖"
+									data-fancybox="gallery"
+									data-caption="招牌蓮藕茶">
+									<div class="card border-0">
+										<img src="images/drink12.jpg" class="card-img-top" alt="招牌蓮藕茶" />
+										<div
+											class="card-body bgc-lotus-a top-0 end-0 bottom-0 start-0 position-absolute d-flex flex-column align-items-center justify-content-center text-darkred">
+											<h3 class="card-title h5 mb-4 1h-base">招牌蓮藕茶</h3>
+											<i class="bi bi-arrows-angle-expand"></i>
+											<p class="card-text mt-4"></p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</main>
+		<footer class="py-5 bgc-pearl-a text-darkred">
+			<div class="container">
+				<!-- 社群、連結、聯絡資訊 -->
+				<div class="footer top">
+					<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+						<!-- 社群 -->
+						<div class="col">
+							<!-- Logo -->
+							<div class="text-lg-center mb-3">
+								<a class="col-4" href="index.html" title="首頁">
+									<img src="images/Logo.svg" alt="蓮藕大王鼎中店(正哥)" />
+								</a>
+							</div>
+							<!-- 社群 Logo -->
+							<ul
+								class="list-unstyled d-flex align-items-center justify-content-lg-center social-icon">
+								<li class="me-3">
+									<a
+										class="text-darkred fs-2"
+										href="https://www.facebook.com/蓮藕大王鼎中店正哥美式行動餐車-396313804322166"
+										target="_blank"
+										title="前往蓮藕大王鼎中店(正哥)FB專頁">
+										<i class="bi bi-facebook"></i>
+										<span class="d-none">FB專頁</span>
+									</a>
+								</li>
+								<li class="me-3">
+									<a
+										class="text-darkred fs-2"
+										href="https://instagram.com/lotus.root0510?igshid=NGVhN2U2NjQ0Yg=="
+										target="_blank"
+										title="前往蓮藕大王鼎中店(正哥)IG專頁">
+										<i class="bi bi-instagram"></i>
+										<span class="d-none">IG專頁</span>
+									</a>
+								</li>
+								<li>
+									<a
+										class="text-darkred fs-2"
+										href="https://l.facebook.com/l.php?u=https%3A%2F%2Fline.me%2Fti%2Fg2%2FIqjPMIcnA8UDphSIGMgVQaDSWk-R7ZaFCcwVRQ%3Futm_source%3Dinvitation%26utm_medium%3Dlink_copy%26utm_campaign%3Ddefault%26fbclid%3DIwZXh0bgNhZW0CMTAAAR04-rdSyXzqlOf9kpNCQULl0mcj1Pydhkv6XzmRaqp1gEKi7XEVmyf2T-Q_aem_z9vKRccXcbcLgh9tpwCFkw&h=AT2AxblCI43_3_t4mTnXfV_DXz8amt2xk7-G5aEj0rSlFkSqlX0tDCBwGZzL3ObnR834xCNRMjjuiS3qR0TcS5KqVx2KVTIINFsf1HTPWPKP0D13FgEKBQmgbCPnBnPGjB6p&__tn__=-UK-R&c[0]=AT2lhFbUC0NmzQg1f5_uIsu_nndS5mtFghUHpRHpdnltk-QKhLctT_-ckfAXHkHzJK6oUzmjf0aARi4cWCVoi04KeaHJ39Txi83UQCt6o9hvXngzW2A21RhvZ_rfR7o0nyTyP30eX_w2ueo-ic1bWLtp8lhMyDS5kGoefOeyUNxx_Q8974D8d2abNnjKchoAKT13rRjQVsxyXBsoMfYNkactonQ"
+										target="_blank"
+										title="前往蓮藕大王鼎中店(正哥)Line社群">
+										<i class="bi bi-line"></i> <span class="d-none">Line社群</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- 連結 -->
+						<div class="col">
+							<h3 class="h5">連結</h3>
+							<!-- <h3 class="h5 border-bottom d-inline-block col-8 pb-2">連結</h3> -->
+							<hr class="col-8 pb-2 my-1" />
+							<ul class="list-unstyled row row-cols-2 g-3">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html#about" title="前往 關於蓮藕大王">
+										關於蓮藕大王
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										title="前往 最新消息"
+										>最新消息
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a
+												class="dropdown-item"
+												href="index.html#activity"
+												title="前往 餐車活動">
+												餐車活動
+											</a>
+										</li>
+										<li>
+											<a
+												class="dropdown-item"
+												href="index.html#holiday"
+												title="前往 休假公告">
+												休假公告
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="index.html#new-product"
+										title="前往 最新商品">
+										最新商品
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="menu.html" title="前往 菜單MENU">菜單MENU</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="onlineshop.html" title="前往 線上購物">
+										線上購物
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="index.html#contact-us" title="前往 聯絡我們">
+										聯絡我們
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="index.html#subscribe" title="前往 訂閱"
+										>訂閱</a
+									>
+								</li>
+							</ul>
+						</div>
+						<!-- 聯絡資訊 -->
+						<div class="col">
+							<h3 class="h5">聯絡資訊</h3>
+							<hr class="col-8 pb-2 my-1" />
+							<ul class="list-unstyled lh-lg">
+								<li>客服專線:<span>07-359-5118/0929-108-125</span></li>
+								<li>電子信箱:<span>service@lotusroot.com.tw</span></li>
+								<li>
+									地址:<span>
+										<a
+											class="text-darkred"
+											href="https://maps.app.goo.gl/cV5yZ5bFfvCNimJx9"
+											title="前往Google map[另開新視窗]"
+											target="_blank">
+											高雄市三民區鼎和街1號
+										</a>
+									</span>
+								</li>
+								<li>營業時間:<span>週一至週六 10:00-21:00</span></li>
+								<li>店休時間:<span>週日</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 版權申告 -->
+				<hr class="mb-0" />
+				<div class="py-3 text-center footer-bottom">
+					<small>
+						&copy; 2025 蓮藕大王鼎中店正哥美式行動餐車<span
+							class="px-2 d-lg-inline-block d-none"
+							>|</span
+						>
+						<br class="d-lg-none d-block" />
+						此網站為版型設計，無商業用途<span class="px-2 d-lg-inline-block d-none"
+							>|</span
+						>
+						<br class="d-lg-none d-block" />
+						文字及圖檔來源於
+						<a
+							href="#"
+							class="text-darkred"
+							target="_blank"
+							title="前往蓮藕大王鼎中店[另開新視窗]">
+							蓮藕大王鼎中店(正哥)版權所有
+						</a>
+						<br class="d-lg-none d-block" />
+						<span class="px-2 d-lg-inline-block d-none">|</span>
+						此為本蓮藕大王鼎中店(正哥)版權圖
+						<a
+							href="service@lotusroot.com.tw"
+							class="text-darkred"
+							title="信箱:service@lotusroot.com.tw"
+							>有問題</a
+						>來信告知
+					</small>
+				</div>
+			</div>
+		</footer>
+		<!-- js -->
+		<script src="bs-533/js/bootstrap.bundle.min.js"></script>
+		<script src="js/jquery-3.7.1.js"></script>
+		<script src="js/ui-main/dist/fancybox/fancybox.umd.js"></script>
+		<!--  燈箱 -->
+		<script>
+			Fancybox.bind("[data-fancybox]", {});
+		</script>
+		<!-- 分類、過濾 -->
+		<script src="js/filterizr-master/dist/jquery.filterizr.min.js"></script>
+		<script>
+			$(".filter-area").filterizr();
+			$(".filter-btn li").click(function () {
+				$(this).addClass("active").siblings().removeClass("active");
+			});
+		</script>
+	</body>
+</html>
+<!-- <iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/Sm1sQxV06j4?si=0KRm5h8rhNntte_V"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe> -->
+<!-- 807高雄市三民區鼎和街1號 https://maps.app.goo.gl/cV5yZ5bFfvCNimJx9 -->
