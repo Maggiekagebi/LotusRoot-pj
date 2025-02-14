@@ -22,103 +22,12 @@
 	</head>
 
 	<body>
-		<!-- TOP不對齊上方 -->
-		<div class="bgc-lotus py-2 border-bottom border-3 border-darkred">
-			<div class="container">
-				<!-- 左右兩邊留白 -->
-				<!-- 聯絡資訊、語系、會員 -->
-				<div class="d-flex align-items-center justify-content-between">
-					<!-- d-flex直排、align-items-center對齊軸線中央 -->
-					<!-- 聯絡資訊 -->
-					<div>
-						<ul class="list-unstyled d-flex mb-0">
-							<!-- mb-0把它拉上去 -->
-							<!-- 電子信箱 -->
-							<li class="me-3">
-								<a
-									class="text-darkred"
-									href="mailto:service@lotusroot.com.tw"
-									title="聯絡信箱：service@lotusroot.com.tw">
-									<i class="bi bi-envelope"></i>
-									<span class="text-darkred d-md-inline-block d-none"
-										>service@lotusroot.com.tw</span
-									>
-								</a>
-							</li>
-							<!-- 電話 -->
-							<li>
-								<a
-									class="text-darkred"
-									href="tel:07-359-5118"
-									title="專線：07-359-5118">
-									<i class="bi bi-telephone"></i>
-									<span class="text-darkred d-md-inline-block d-none">07-359-5118</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<!-- 語系、會員、購物車 -->
-					<div class="d-flex me-sm-0 me-3">
-						<!-- 語系 -->
-						<div class="dropdown text-darkred lang-menu">
-							<!-- lang-menu裡面的dropdown-menu -->
-							<button
-								class="btn dropdown-toggle p-0 text-darkred"
-								type="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false">
-								<i class="bi bi-globe-americas"></i>
-								<span class="d-none">語系轉換按鈕</span>
-							</button>
-							<ul class="dropdown-menu">
-								<li class="border-bottom">
-									<a class="dropdown-item" href="#" title="繁體中文">繁</a>
-								</li>
-								<li class="border-bottom">
-									<a class="dropdown-item" href="#" title="簡體中文">簡</a>
-								</li>
-								<li class="border-bottom">
-									<a class="dropdown-item" href="#" title="英文">英</a>
-								</li>
-							</ul>
-						</div>
-						<span class="px-3">|</span>
-						<!-- 會員 -->
-						<div>
-							<a
-								class="text-darkred"
-								href="javascript:;"
-								title="點擊"
-								data-bs-toggle="modal"
-								data-bs-target="#exampleModal">
-								<i class="bi bi-person"></i>
-								<span class="text-darkred d-md-inline-block d-none">登入</span>
-							</a>
-						</div>
-						<span class="px-3">|</span>
-						<!-- 購物車 -->
-						<div class="cart-btn">
-							<a
-								href="cart-list.html"
-								title="前往 我的購物車"
-								class="position-relative">
-								<i class="bi bi-cart text-darkred"></i>
-								<span
-									class="text-white small bg-danger rounded-pill p-1 fs-8 fw-bold position-absolute"
-									>+99</span
-								>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!-- 主選單 -->
 		<nav
 			class="navbar navbar-expand-lg bgc-lotus-a-nav shadow-sm position-sticky top-0 z-3">
 			<div class="container">
-				<h1 class="mb-0 d-inline-block">
-					<a class="navbar-brand col-3 me-0" href="index.html" title="回 首頁">
+				<h1 class="mb-0 d-inline-block col-lg-2 p-lg-3 col-3">
+					<a class="navbar-brand me-0" href="index.html" title="回 首頁">
 						<img
 							class="d-md-inline-block d-none"
 							src="images/Logo.svg"
@@ -131,7 +40,7 @@
 				<!-- 平板、手機 -->
 				<div class="search-btn d-lg-none d-inline-block ms-auto">
 					<button
-						class="btn"
+						class="btn px-1"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#search-area"
@@ -141,6 +50,37 @@
 						<span class="d-none">搜尋按鈕</span>
 					</button>
 				</div>
+				<!-- 平板、手機版的會員及購物車 -->
+				<li class="nav-item d-lg-none d-inline-block">
+					<div class="d-flex me-sm-0 align-items-center">
+						<!-- 會員 -->
+						<div>
+							<a
+								class="text-darkred btn"
+								href="javascript:;"
+								title="點擊"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal">
+								<i class="bi bi-person fs-5"></i>
+								<span class="text-darkred d-md-inline-block d-none">登入</span>
+							</a>
+						</div>
+						<!-- 購物車 -->
+						<div class="cart-btn">
+							<a
+								href="cart-list.html"
+								title="前往 我的購物車"
+								class="position-relative">
+								<i class="bi bi-cart text-darkred"></i>
+								<span
+									class="text-white small bg-danger rounded-pill p-1 fs-8 mb-2 fw-bold position-absolute"
+									style="left: 10px"
+									>+99</span
+								>
+							</a>
+						</div>
+					</div>
+				</li>
 				<!-- 漢堡 -->
 				<button
 					class="navbar-toggler border-0"
@@ -221,6 +161,36 @@
 								</button>
 							</div>
 						</li>
+						<!-- 電腦版的會員及購物車 -->
+						<li class="nav-item d-lg-block d-none">
+							<div class="d-flex me-sm-0 align-items-center">
+								<!-- 會員 -->
+								<div>
+									<a
+										class="text-darkred nav-link"
+										href="javascript:;"
+										title="點擊"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal">
+										<i class="bi bi-person"></i>
+										<span class="text-darkred d-md-inline-block d-none">登入</span>
+									</a>
+								</div>
+								<!-- 購物車 -->
+								<div class="cart-btn">
+									<a
+										href="cart-list.html"
+										title="前往 我的購物車"
+										class="position-relative">
+										<i class="bi bi-cart text-darkred"></i>
+										<span
+											class="text-white small bg-danger rounded-pill p-1 fs-8 fw-bold position-absolute"
+											>+99</span
+										>
+									</a>
+								</div>
+							</div>
+						</li>
 					</ul>
 					<!-- <input
 							class="form-control me-2"
@@ -249,6 +219,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- 輪播圖/行銷圖 -->
 		<header>
 			<div id="banner-slide" class="carousel slide">
@@ -510,7 +481,7 @@
 						<div class="col">
 							<div class="card h-100 bg-transparent border-3">
 								<!-- <div class="overflow-hidden img-box"> -->
-								<div class="overflow-hidden">
+								<div class="overflow-hidden col-8 mx-auto">
 									<img
 										src="images/holidays.png"
 										class="card-img-top object-fit-cover"
@@ -555,7 +526,7 @@
 						<div class="col">
 							<div class="card h-100 bg-transparent border-3">
 								<!-- <div class="overflow-hidden img-box"> -->
-								<div class="overflow-hidden">
+								<div class="overflow-hidden col-8 mx-auto">
 									<img
 										src="images/typhoon.png"
 										class="card-img-top object-fit-cover"
@@ -601,7 +572,7 @@
 						<div class="col">
 							<div class="card h-100 bg-transparent border-3">
 								<!-- <div class="overflow-hidden img-box"> -->
-								<div class="overflow-hidden">
+								<div class="overflow-hidden col-8 mx-auto">
 									<!-- 加div overflow-hidden如果圖有超出去就藏起來以及在img class裡面加object-fit-cover圖片高度相同 -->
 									<img
 										src="images/holidays.png"
@@ -1185,7 +1156,9 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header border-0">
-						<h1 class="modal-title fs-5 text-darkred" id="exampleModalLabel">請先登入</h1>
+						<h1 class="modal-title fs-5 text-darkred" id="exampleModalLabel">
+							請先登入
+						</h1>
 						<button
 							type="button"
 							class="btn-close"
@@ -1294,7 +1267,9 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header border-0">
-						<h1 class="modal-title fs-5 text-darkred" id="exampleModalRegisterLabel">會員註冊</h1>
+						<h1 class="modal-title fs-5 text-darkred" id="exampleModalRegisterLabel">
+							會員註冊
+						</h1>
 						<button
 							type="button"
 							class="btn-close"
