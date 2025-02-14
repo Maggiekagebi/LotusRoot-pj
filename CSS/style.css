@@ -241,7 +241,7 @@ a.nav-link:hover {
 /* 社群logo */
 .social-icon li:last-of-type,
 .filter-btn li:last-of-type {
-	margin-right: 0;
+	margin-right: 0 !important;
 }
 /* -------------- */
 /* menu */
@@ -327,4 +327,8 @@ a.nav-link:hover {
 #product-description-page .product-description-money-text::before {
 	content: "NT$";
 	padding-right: 0.1rem;
+}
+
+.onlineshop-icon-ul{
+	margin-bottom: 0;
 }
