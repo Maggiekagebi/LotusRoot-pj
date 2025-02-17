@@ -340,14 +340,14 @@ a.nav-link:hover {
 	left: 0;
 	width: 100%; /* 確保搜尋欄寬度跟 nav 一樣 */
 	z-index: 100; /* 確保它不會被其他內容蓋住 */
-	background-color: rgb(180, 172, 211,0.5); /* 避免透明導致內容重疊 */
+	background-color: rgb(180, 172, 211, 0.5); /* 避免透明導致內容重疊 */
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影增加層次感 */
-    padding: 10px 0;
-    display: none; /* 預設隱藏，展開時才顯示 */
+	padding: 10px 0;
+	display: none; /* 預設隱藏，展開時才顯示 */
 }
 
 /* 當搜尋欄展開時，讓它變為可見 */
 #search-area.show {
-    display: block;
+	display: block;
 }
 
