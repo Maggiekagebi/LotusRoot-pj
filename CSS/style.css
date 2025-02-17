@@ -165,11 +165,11 @@ a.nav-link:hover {
 	content: "NT$";
 	padding-right: 0.1rem;
 }
-#new-product .card-text span::after {
+/* #new-product .card-text span::after {
 	content: "元";
 	padding-left: 0.1rem;
 	font-size: 15px;
-}
+} */
 /* -------------- */
 /* 線上購物 */
 #onlineshop-page .card ul {
@@ -184,11 +184,11 @@ a.nav-link:hover {
 	content: "NT$";
 	padding-right: 0.1rem;
 }
-#onlineshop-page .card-text span::after {
+/* #onlineshop-page .card-text span::after {
 	content: "元";
 	padding-left: 0.1rem;
 	font-size: 15px;
-}
+} */
 
 /* -------------- */
 /* 休假公告 */
@@ -332,3 +332,22 @@ a.nav-link:hover {
 .onlineshop-icon-ul {
 	margin-bottom: 0;
 }
+
+/* 搜尋表單提整 */
+.sticky-search {
+	position: fixed; /* 改用 fixed 讓它一直黏住 */
+	/* top: 160px; 讓它與 navbar 保持一致(設定在media) */
+	left: 0;
+	width: 100%; /* 確保搜尋欄寬度跟 nav 一樣 */
+	z-index: 100; /* 確保它不會被其他內容蓋住 */
+	background-color: rgb(180, 172, 211,0.5); /* 避免透明導致內容重疊 */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影增加層次感 */
+    padding: 10px 0;
+    display: none; /* 預設隱藏，展開時才顯示 */
+}
+
+/* 當搜尋欄展開時，讓它變為可見 */
+#search-area.show {
+    display: block;
+}
+
