@@ -294,11 +294,33 @@ a.nav-link:hover {
 #cart-list-form th:not(th:last-of-type):not(th:first-of-type) {
 	border-right: 2px solid #84b78e;
 }
+
+/* 產品說明的select */
+.form-select{
+	flex-grow: 1;
+	text-align: center;
+	text-align-last: center;
+}
+
+
+/* 產品說明的-+按鈕 */
 .plus-btn,
 .dash-btn {
 	width: 30px;
 	height: 30px;
 }
+
+.btn.dash-btn,
+.btn.plus-btn {
+	background-color: transparent;
+}
+
+
+.btn.dash-btn i:hover,
+.btn.plus-btn i:hover {
+	color:rgb(255, 0, 0);
+}
+
 
 /* .plus-btn i,
 .dash-btn i{
@@ -311,6 +333,7 @@ a.nav-link:hover {
 /* #cart-list-form table{
 	--bs-table-bg:transparent!important;
 }  table的顏色下方的tr顏色*/
+
 /* 結帳 */
 #cart-list-page .card-money-text::before {
 	content: "NT$";

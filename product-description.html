@@ -258,32 +258,46 @@
 							</div>
 
 							<!-- 容量、數量 -->
-							<div class="col-xl-6">
-								<div class="h5 mt-3 mx-4 text-start">
-									<span class="me-3 text-darkred">容量</span>
-									<select
-										class="form-select text-center border-1 bg-transition text-darkred rounded my-4"
-										aria-label="select-list">
-										<option value="1">瓶</option>
-										<option value="2" selected="">大</option>
-										<option value="3">中</option>
-									</select>
-
-									<span class="me-2 text-darkred">數量</span>
-									<div class="d-flex align-items-center">
-										<button class="btn dash-btn" type="button">
-											<i class="bi bi-dash-lg"></i>
-										</button>
+							<div class="">
+								<div class="row row-cols-3 mx-0 g-xl-5 g-3">
+									<div class="col">
+										<label class="me-3 text-darkred">容量</label>
 										<select
-											class="form-select text-center border-1 bg-transition text-darkred rounded mx-2"
-											aria-label="Default select example">
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
+											class="form-select border-1 bg-transition text-darkred rounded my-4"
+											aria-label="select-list">
+											<option value="1">瓶</option>
+											<option value="2" selected>大</option>
+											<option value="3">中</option>
 										</select>
-										<button class="btn plus-btn" type="button">
-											<i class="bi bi-plus-lg"></i>
-										</button>
+									</div>
+									<div class="col">
+										<label class="me-3 text-darkred">甜度</label>
+										<select
+											class="form-select border-1 bg-transition text-darkred rounded my-4"
+											aria-label="select-list">
+											<option value="1" selected>無</option>
+											<option value="2">微</option>
+											<option value="3">半</option>
+											<option value="4">正常</option>
+										</select>
+									</div>
+									<div class="col">
+										<label class="me-2 text-darkred">數量</label>
+										<div class="d-flex align-items-center">
+											<button class="btn p-0 dash-btn" type="button">
+												<i class="bi bi-dash-lg text-darkred"></i>
+											</button>
+											<select
+												class="form-select text-center border-1 bg-transition text-darkred rounded my-4"
+												aria-label="Default select example">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											</select>
+											<button class="btn p-0 plus-btn" type="button">
+												<i class="bi bi-plus-lg text-darkred"></i>
+											</button>
+										</div>
 									</div>
 								</div>
 							</div>
