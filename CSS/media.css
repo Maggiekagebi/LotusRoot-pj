@@ -54,6 +54,11 @@
 	.sticky-search {
 		top: 60px; /* 手機版的 navtop 設定 */
 	}
+	.card-money-text {
+		font-size: 1.5rem;
+		text-align: end;
+		display: block;
+	}
 }
 /* 平板版設定  適用於最小為768;最大為1023*/
 @media (min-width: 768px) and (max-width: 1023px) {

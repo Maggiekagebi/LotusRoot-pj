@@ -11,7 +11,6 @@
 		<link rel="stylesheet" href="fonts/icons-1.11.3/font/bootstrap-icons.css" />
 		<link rel="stylesheet" href="CSS/style.css" />
 		<link rel="stylesheet" href="CSS/media.css" />
-
 	</head>
 	<body>
 		<!-- 主選單 -->
@@ -381,7 +380,7 @@
 										</td>
 										<!-- 小計 -->
 										<td class="align-middle p-3">
-											<span  value="55">55</span>
+											<span value="55">55</span>
 										</td>
 										<!-- 變更 -->
 										<td class="align-middle">
@@ -481,20 +480,23 @@
 								</tbody>
 							</table>
 							<!-- 結帳 -->
-							<div class="d-flex justify-content-between bgc-lotus-a p-3">
-								<div>
+							<div
+								class="d-flex align-items-center justify-content-between bgc-lotus-a p-md-3 p-3">
+								<div class="col-4">
 									<input
-										name="product-checkall"
-										class="form-check-input"
+										name="product-check-all"
+										class="form-check-input me-2"
 										type="checkbox"
 										value=""
-										id="product-checkall" />
-									<label class="form-check-label" for="flexCheckDefault">
-										<span class="text-darkred">全選</span>
-									</label>
+										id="product-check-all" />
+									<label class="text-darkred" for="product-check-all">全選 </label>
 								</div>
 								<div>
-									<span class="text-darkred me-3">結帳金額</span>
+									<span class="text-darkred"
+										>已選 <span id="selected-count">0</span> 項商品
+									</span>
+
+									<span class="text-darkred me-3">，結帳金額</span>
 									<span class="text-darkred fs-4 card-money-text">165</span>
 								</div>
 							</div>
@@ -912,11 +914,12 @@
 		</div>
 
 		<!-- js -->
-		<script src="bs-533/js/bootstrap.bundle.min.js"></script>
 		<script src="js/jquery-3.7.1.js"></script>
+		<script src="bs-533/js/bootstrap.bundle.min.js"></script>
+		<!-- 全選所有產品 -->
 		<script>
-			$("#product-checkall").click(function () {
-				if ($("#product-checkall").prop("checked")) {
+			$("#product-check-all").click(function () {
+				if ($("#product-check-all").prop("checked")) {
 					$("input[name='product-check']").each(function () {
 						$(this).prop("checked", true);
 					});
@@ -925,6 +928,22 @@
 						$(this).prop("checked", false);
 					});
 				}
+			});
+		</script>
+		<!-- 按下單獨按鈕或是全選時 顯示選取的產品數 -->
+		<script>
+			$(document).ready(function () {
+				function updateSelectedCount() {
+					let selectedCount = $("input[name='product-check']:checked").length;
+					$("#selected-count").text(selectedCount);
+				}
+				$("input[name='product-check']").change(updateSelectedCount);
+
+				$("#product-check-all").change(function () {
+					$("input[name='product-check']").prop("checked", $(this).prop("checked"));
+					updateSelectedCount();
+				});
+				updateSelectedCount();
 			});
 		</script>
 	</body>
