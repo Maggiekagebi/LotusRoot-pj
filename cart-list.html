@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="fonts/icons-1.11.3/font/bootstrap-icons.css" />
 		<link rel="stylesheet" href="CSS/style.css" />
 		<link rel="stylesheet" href="CSS/media.css" />
+
 	</head>
 	<body>
 		<!-- 主選單 -->
@@ -227,7 +228,7 @@
 					<!-- 內容 -->
 					<div class="col col-xl-10 mx-auto">
 						<form action="" method="post" id="cart-list-form">
-							<table class="table table-hover text-center">
+							<table class="table text-center">
 								<thead class="text-center">
 									<tr>
 										<!-- <tr class="bgc-lotus-a"> -->
@@ -240,14 +241,16 @@
 									</tr>
 								</thead>
 								<tbody>
+									<!-- 1 -->
 									<tr>
 										<!-- 選取 -->
 										<td class="align-middle">
 											<div class="form-check">
 												<input
+													name="product-check"
 													class="form-check-input"
 													type="checkbox"
-													value=""
+													value="1"
 													id="flexCheckDefault" />
 												<label class="form-check-label" for="flexCheckDefault">
 													<span class="d-none">選取</span>
@@ -282,7 +285,7 @@
 										<!-- 數量 -->
 										<td class="align-middle">
 											<div class="d-flex allign-items-center">
-												<button class="btn dash-btn" type="button">
+												<button class="btn p-1 dash-btn" type="button">
 													<i class="bi bi-dash-lg"></i>
 												</button>
 												<select
@@ -292,14 +295,14 @@
 													<option value="2">2</option>
 													<option value="3">3</option>
 												</select>
-												<button class="btn plus-btn" type="button">
+												<button class="btn p-1 plus-btn" type="button">
 													<i class="bi bi-plus-lg"></i>
 												</button>
 											</div>
 										</td>
 										<!-- 小計 -->
-										<td class="align-middle">
-											<span value="55">55</span>
+										<td class="align-middle p-3">
+											<span class="p-3" value="55">55</span>
 										</td>
 										<!-- 變更 -->
 										<td class="align-middle">
@@ -317,14 +320,16 @@
 											</div>
 										</td>
 									</tr>
+									<!-- 2 -->
 									<tr>
 										<!-- 選取 -->
 										<td class="align-middle">
 											<div class="form-check">
 												<input
+													name="product-check"
 													class="form-check-input"
 													type="checkbox"
-													value=""
+													value="2"
 													id="flexCheckDefault" />
 												<label class="form-check-label" for="flexCheckDefault">
 													<span class="d-none">選取</span>
@@ -359,7 +364,7 @@
 										<!-- 數量 -->
 										<td class="align-middle">
 											<div class="d-flex allign-items-center">
-												<button class="btn dash-btn" type="button">
+												<button class="btn p-1 dash-btn" type="button">
 													<i class="bi bi-dash-lg"></i>
 												</button>
 												<select
@@ -369,14 +374,14 @@
 													<option value="2">2</option>
 													<option value="3">3</option>
 												</select>
-												<button class="btn plus-btn" type="button">
+												<button class="btn p-1 plus-btn" type="button">
 													<i class="bi bi-plus-lg"></i>
 												</button>
 											</div>
 										</td>
 										<!-- 小計 -->
-										<td class="align-middle">
-											<span value="55">55</span>
+										<td class="align-middle p-3">
+											<span  value="55">55</span>
 										</td>
 										<!-- 變更 -->
 										<td class="align-middle">
@@ -394,14 +399,16 @@
 											</div>
 										</td>
 									</tr>
+									<!-- 3 -->
 									<tr>
 										<!-- 選取 -->
 										<td class="align-middle">
 											<div class="form-check">
 												<input
+													name="product-check"
 													class="form-check-input"
 													type="checkbox"
-													value=""
+													value="3"
 													id="flexCheckDefault" />
 												<label class="form-check-label" for="flexCheckDefault">
 													<span class="d-none">選取</span>
@@ -436,7 +443,7 @@
 										<!-- 數量 -->
 										<td class="align-middle">
 											<div class="d-flex allign-items-center">
-												<button class="btn dash-btn" type="button">
+												<button class="btn p-1 dash-btn" type="button">
 													<i class="bi bi-dash-lg"></i>
 												</button>
 												<select
@@ -446,13 +453,13 @@
 													<option value="2">2</option>
 													<option value="3">3</option>
 												</select>
-												<button class="btn plus-btn" type="button">
+												<button class="btn p-1 plus-btn" type="button">
 													<i class="bi bi-plus-lg"></i>
 												</button>
 											</div>
 										</td>
 										<!-- 小計 -->
-										<td class="align-middle">
+										<td class="align-middle p-3">
 											<span value="55">55</span>
 										</td>
 										<!-- 變更 -->
@@ -474,9 +481,22 @@
 								</tbody>
 							</table>
 							<!-- 結帳 -->
-							<div class="text-end bgc-lotus-a p-3">
-								<span class="text-darkred me-3">結帳金額</span>
-								<span class="text-darkred fs-4 card-money-text">165</span>
+							<div class="d-flex justify-content-between bgc-lotus-a p-3">
+								<div>
+									<input
+										name="product-checkall"
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="product-checkall" />
+									<label class="form-check-label" for="flexCheckDefault">
+										<span class="text-darkred">全選</span>
+									</label>
+								</div>
+								<div>
+									<span class="text-darkred me-3">結帳金額</span>
+									<span class="text-darkred fs-4 card-money-text">165</span>
+								</div>
 							</div>
 							<!-- 結帳btn -->
 							<div class="text-end mt-4">
@@ -894,6 +914,19 @@
 		<!-- js -->
 		<script src="bs-533/js/bootstrap.bundle.min.js"></script>
 		<script src="js/jquery-3.7.1.js"></script>
+		<script>
+			$("#product-checkall").click(function () {
+				if ($("#product-checkall").prop("checked")) {
+					$("input[name='product-check']").each(function () {
+						$(this).prop("checked", true);
+					});
+				} else {
+					$("input[name='product-check']").each(function () {
+						$(this).prop("checked", false);
+					});
+				}
+			});
+		</script>
 	</body>
 </html>
 
