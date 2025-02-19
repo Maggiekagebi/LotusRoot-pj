@@ -373,4 +373,7 @@ a.nav-link:hover {
 #search-area.show {
 	display: block;
 }
-
+/* 商品詳細說明的換行 */
+.pre-line{
+	white-space: pre-line;
+}
