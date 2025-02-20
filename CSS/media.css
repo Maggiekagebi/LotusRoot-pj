@@ -33,11 +33,11 @@
 	}
 	/* 甜度*/
 	#cart-list-form tr td:nth-of-type(4) {
-		flex: 0 0 30%;
+		flex: 0 0 32%;
 	}
 	/* 數量 */
 	#cart-list-form tr td:nth-of-type(5) {
-		flex: 0 0 40%;
+		flex: 0 0 38%;
 	}
 	/* 小計 */
 	#cart-list-form tr td:nth-of-type(6) {
