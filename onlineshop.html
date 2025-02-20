@@ -136,7 +136,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="ccontact-us" title="前往 聯絡我們">聯絡我們</a>
+							<a class="nav-link" href="index.html#contact-us" title="前往 聯絡我們">聯絡我們</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="index.html#subscribe" title="前往 訂閱"
@@ -1060,7 +1060,7 @@
 			</div>
 		</footer>
 
-		<!-- 登入表單 -->
+		<!-- 登入表單 使用bts model的互動視窗 -->
 		<div
 			class="modal fade"
 			id="exampleModal"
@@ -1101,8 +1101,8 @@
 										required />
 								</div>
 								<div class="form-check">
-									<div class="d-flex justify-content-center">
-										<div class="form-check">
+									<div class="row col justify-content-center align-items-center">
+										<div class="form-check col-4 col-md-auto gx-1 text-start">
 											<input
 												class="form-check-input is-invalid ms-3"
 												type="checkbox"
@@ -1111,7 +1111,7 @@
 												aria-describedby="rememberMeFeedback" />
 											<label class="form-check-label" for="rememberMe"> 記住我 </label>
 										</div>
-										<div class="form-check">
+										<div class="form-check col-4 col-md-3 gx-1 text-start">
 											<input
 												class="form-check-input is-invalid ms-3"
 												type="checkbox"
@@ -1120,16 +1120,8 @@
 												aria-describedby="stayLoggedInFeedback" />
 											<label class="form-check-label" for="stayLoggedIn"> 保持登入 </label>
 										</div>
-										<div class="form-check">
-											<input
-												class="form-check-input is-invalid ms-3"
-												type="checkbox"
-												value="忘記密碼"
-												id="forgotPassword"
-												aria-describedby="forgotPasswordFeedback" />
-											<label class="form-check-label" for="forgotPassword">
-												忘記密碼
-											</label>
+										<div class="form-check col-4 col-md-6 gx-md-1 text-start">
+											<a href="###" class="float-end">忘記密碼</a>
 										</div>
 									</div>
 									<div class="mb-4 mt-3">
@@ -1171,7 +1163,8 @@
 				</div>
 			</div>
 		</div>
-		<!-- 註冊 -->
+
+		<!-- 註冊 使用bts model的互動視窗 -->
 		<div
 			class="modal fade"
 			id="exampleModalRegister"
