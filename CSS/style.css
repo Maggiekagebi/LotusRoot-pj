@@ -339,11 +339,17 @@ a.nav-link:hover {
 	content: "NT$";
 	padding-right: 0.1rem;
 }
-#cart-list-page .card-money-text::after {
+/* #cart-list-page .card-money-text::after {
 	content: "元";
 	padding-left: 0.1rem;
 	font-size: 15px;
+} */
+#success-order-page .card-money-text::before {
+	content: "NT$";
+	padding-right: 0.1rem;
 }
+
+
 /* -------------- */
 /* 商品說明頁 */
 /* 價錢 */
