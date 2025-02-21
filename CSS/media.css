@@ -78,6 +78,6 @@
 /* 電腦版設定 適用大於1024或=1024*/
 @media (min-width: 1024px) {
 	.sticky-search {
-		top: 242px; /* 電腦版的 top 設定與 navbar 保持一致  */
+		top: 135px; /* 電腦版的 top 設定與 navbar 保持一致  */
 	}
 }
